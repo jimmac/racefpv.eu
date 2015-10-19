@@ -1,0 +1,27 @@
+= wrap_layout :layout do
+  #main
+    %article
+      .container
+        %header
+          %h2
+            = current_article.title unless current_article.nil?
+          %p.date
+            = current_article.date.strftime('%b %e %Y') unless  current_article.nil?
+      .container
+        = yield
+        
+        %ul#tagstrip
+          - if !current_article.nil?
+            - current_article.tags.each do |tag| 
+              %li.tag
+                = link_to tag, tag_path(tag)
+
+        #disqus_thread
+        :javascript
+          var disqus_shortname = "#{data.site.disqusid}"; // required: replace example with your forum shortname
+
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();

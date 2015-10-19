@@ -1,0 +1,30 @@
+/ Header
+#header.skel-panels-fixed
+  .top
+    = partial "logo"
+    / Nav
+    %nav#nav
+      %ul
+        - data.menu.each do |i|
+          %li
+            - if i.link.match('^#').nil?
+              = "<a href='#{i.link}'><span>#{i.title}</span></a>"
+            - else
+              = "<a href='/#{i.link}'><span>#{i.title}</span></a>"
+
+    %aside
+      %h5 By Year
+      %ul
+        - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+          %li
+            = link_to year, blog_year_path(year)
+            %span.tagcount 
+              = surround "(", ")" do
+                = articles.size
+
+      %h5 
+        = link_to 'By Tags', '/tags'
+
+
+  = partial "social"
+

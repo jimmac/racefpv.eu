@@ -1,0 +1,24 @@
+---
+pageable: true
+layout: post
+---
+.header
+  %h2
+    Archive for
+    %span.timedate
+      - case page_type
+        -when 'day'
+          = Date.new(year, month, day).strftime('%b %e %Y')
+        -when 'month'
+          = Date.new(year, month, 1).strftime('%b %Y')
+        -when 'year'
+          = year
+%p
+%ul.blog
+  - page_articles.each_with_index do |article, i|
+    %li
+      = link_to article.title, article
+      %span.timestamp
+        = article.date.strftime('%b %e')
+
+= partial :pagination, locals: locals

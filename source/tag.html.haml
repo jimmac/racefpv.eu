@@ -1,0 +1,22 @@
+---
+title: Journal Entries By Tag
+layout: post
+pageable: true
+---
+
+.header
+  %h2
+    Articles tagged
+    = surround("'","'") do
+      = tagname
+
+%ul.blog
+  - page_articles.each_with_index do |article, i|
+    %li
+      = link_to article.title, article
+      %span.timestamp
+        = article.date.strftime('%b %e %Y')
+
+= partial :pagination, locals: locals
+
+= link_to "All tags", "/tags"

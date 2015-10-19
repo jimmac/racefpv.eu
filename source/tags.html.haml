@@ -1,0 +1,17 @@
+---
+title: Journal Entries By Tag
+layout: post
+---
+
+.header
+  %h2
+    Journal Entries By Tag
+  
+  %ul#tagstrip.bytags
+    - blog.tags.each do |tag, articles|
+      %li.tag
+        %a{href: tag_path(tag)}
+          = tag
+        %span.tagcount
+          = articles.size
+  

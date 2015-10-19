@@ -1,0 +1,48 @@
+!!!5
+%html
+  %head
+    - if current_article
+      %title 
+        = 'Race FPV — ' + current_article.title
+    - else
+      %title Race FPV
+    %meta{content: "text/html; charset=UTF8", "http-equiv" => "content-type"}/
+    %meta{content: "fpv racing for beginners", name: "description"}/
+    %meta{content: "jimmac red20rc fpv multirotor racing quad", name: "keywords"}/
+    %link{rel:"icon", "type" => "image/png", href:"/images/icons/favicon.png"}/
+    %link{rel:"shortcut icon", "type" => "image/x-icon", href:"/favicon.ico"}/
+    /%link{rel:"stylesheet", "type" => "text/css", href:"https://fonts.googleapis.com/css?family=Montserrat:400,700"}/
+    %link{rel:"stylesheet", "type" => "text/css", href:"https://fonts.googleapis.com/css?family=Exo+2:200,100,700&subset=latin,latin-ext"}/
+    %link{href: "/css/fontawesome.css", rel: "stylesheet"}/
+    %link{href: "/css/lightbox.css", rel: "stylesheet"}/
+    %link{rel:"alternate", "type" => "application/rss+xml", "title" => "Jakub Steiner (Atom)", href:"/feed.xml"}/
+    /[if lte IE 8] <script src="js/html5shiv.js"></script>
+    %script{src: "/js/jquery.min.js"}
+    %script{src: "/js/lightbox.js"}
+    %script{src: "/js/skel.min.js"}
+    %script{src: "/js/skel-panels.min.js"}
+    %script{src: "/js/init.js"}
+  %body
+    %noscript
+      %link{href: "/css/skel-noscript.css", rel: "stylesheet"}/    
+      %link{href: "/css/style.css", rel: "stylesheet"}/
+      %link{href: "/css/style-wide.css", rel: "stylesheet"}/    
+    /[if lte IE 9] <link rel="stylesheet" href="css/ie9.css" />
+    /[if lte IE 8] <link rel="stylesheet" href="css/ie8.css" />
+    -if current_page.path == 'index.html'
+      = partial "navigation"
+    -else
+      = partial "blog-navigation"
+    %div{:role => "main", :class => "main"}= yield
+    = partial "footer"
+
+:javascript
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-68811788-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();

@@ -1,0 +1,21 @@
+= wrap_layout :layout do
+  #main
+    #fader.fader.jsonly
+      - list_directory("source/images/#{data.page.menu}/banner/*").each do |img|
+        %img{class:"slide", src:img}/
+      %noscript
+        :css
+          #fader {
+            display: none;
+          }
+        %img{class:"slide", src:"/images/banner/exoten.jpg"}/
+    %section
+      .container
+        = yield
+
+:javascript
+  $("#nav a[href='/#{data.page.menu}']").addClass('active'); //select the menu. ouch, I know.
+  $('#fader').easyFader({
+    slideDur: 3000,
+    fadeDur: 1000
+  });

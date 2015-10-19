@@ -1,0 +1,16 @@
+/ Header
+#header.skel-panels-fixed
+  .top
+    = partial "logo"
+    / Nav
+    %nav#nav
+      %ul
+        - data.menu.each do |i|
+          %li
+            - if i.link.match('^#').nil?
+              = "<a id='#{i.link.gsub(/#/,'')}-link' href='#{i.link}'><span>#{i.title}</span></a>"
+            - else
+              = "<a id='#{i.link.gsub(/#/,'')}-link' class='skel-panels-ignoreHref' href='#{i.link}'><span>#{i.title}</span></a>"
+
+  = partial "social"
+

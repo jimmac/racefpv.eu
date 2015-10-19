@@ -1,0 +1,50 @@
+=border-radius($radius)
+  border-radius: $radius
+  -moz-border-radius: $radius
+  -webkit-border-radius: $radius
+
+=border-radius-bottom($radius)
+  border-bottom-left-radius: $radius
+  border-bottom-right-radius: $radius
+  -moz-border-radius-bottomleft: $radius
+  -moz-border-radius-bottomright: $radius
+  -webkit-border-bottom-left-radius: $radius
+  -webkit-border-bottom-right-radius: $radius
+
+=border-radius-right($radius)
+  border-top-right-radius: $radius
+  border-bottom-right-radius: $radius
+  -moz-border-radius-topright: $radius
+  -moz-border-radius-bottomright: $radius
+  -webkit-border-top-right-radius: $radius
+  -webkit-border-bottom-right-radius: $radius
+
+=border-radius-left($radius)
+  border-top-left-radius: $radius
+  border-bottom-left-radius: $radius
+  -moz-border-radius-topleft: $radius
+  -moz-border-radius-bottomleft: $radius
+  -webkit-border-top-left-radius: $radius
+  -webkit-border-bottom-left-radius: $radius
+
+=colorgradient($from, $to)
+  color: -moz-linear-gradient(0% 100% 90deg, $from, $to)
+  color: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to))
+  
+=text-shadow($x:0,$y:'1px',$blur:'1px',$color:'rgba(0,0,0,.5)')
+  text-shadow: $x $y $blur $color
+  -moz-text-shadow: $x $y $blur $color
+  -webkit-text-shadow: $x $y $blur $color
+  -o-moz-text-shadow: $x $y $blur $color
+
+=box-shadow($x:0,$y:'1px',$blur:'1px',$color:'rgba(0,0,0,.5)', $inset:'')
+  box-shadow: $x $y $blur $color $inset
+  -moz-box-shadow: $x $y $blur $color $inset
+  -webkit-box-shadow: $x $y $blur $color $inset
+  -o-moz-box-shadow: $x $y $blur $color $inset
+
+=column-count($i)
+  column-count: $i
+  -moz-column-count: $i
+  -webkit-column-count: $i
+  -o-column-count: $i
