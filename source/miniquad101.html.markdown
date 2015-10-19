@@ -9,7 +9,7 @@ Starting with FPV can be a little overwhelming, so I decided to put some essenti
 
 ### How Does It Fly So Smoothly? ###
 
-The most appealing thing about miniquads to me was just how smooth of a flight people like Juz70 are able to achieve. A fixed wing can get you very far and fly for a very long time, but you never get such awesome fluidity with no turbulence jerks. The trick is microprocessors. While the concept is easy and can be found in any household thermostat, at the heart of this smooth flight is a *flight controller* that runs a program called PID controller (enjoy the vague terminology). PID stands for Proprotional, Integral and Derivative and I try to explain the concept in detail in this article. 
+The most appealing thing about miniquads to me was just how smooth of a flight people like [Juz70](https://www.youtube.com/user/juz70) are able to achieve. A fixed wing can get you very far and fly for a very long time, but you never get such awesome fluidity with no turbulence jerks. The trick is microprocessors, and using the propellers to go all directions, not just forward. While the concept is easy and can be found in any household thermostat, at the heart of this smooth flight is a *flight controller* that runs a program called PID controller (enjoy the vague terminology). PID stands for Proprotional, Integral and Derivative and I try to explain the concept in detail in this [PID tuning article](/blog/2015-10-15-the-chore-of-tuning-pids/){: .button.small}. 
 
 Suffice to say, regardless of the size and windy conditions out there, the software is able to compensate for all of that and take your fluid thumb movements and transform it into a gorgeous flight and your gopro can record a lovely session you then post on youtube. Once you learn to fly, that is. And build. And edit video. While many Flight Controllers allow to stabilize the craft on their own or even allow to fly autonomously, to get smooth footage you have to forget about all those aids and learn to fly so called *rate mode*.
 
@@ -30,7 +30,7 @@ To be able to navigate the lingo, here's some technical terms used.
 
 ### Components ###
 
-Building a quad is like building a PC. It's just a matter of picking the right components and hooking them together. No big deal. Unless you use crappy components. And buggy software. Or suck at soldering. In any case, there is an easy path these days, as many manufactures provide RTF kits (ready to fly). Sometimes also called ARTF, as you will need to provide your own radio ("stick controller") and a receiver (almost ready to fly).
+Building a quad is like building a PC. It's just a matter of picking the right components and hooking them together. No big deal. Unless you use crappy components. And buggy software. Or suck at soldering. In any case, there is an easy path these days, as many manufactures provide RTF kits (ready to fly). Sometimes also called ARTF (almost ready to fly), as you will need to provide your own radio ("stick controller") and a receiver (the thing that receives your control commands and forwards it to the flight controller.
 
 Sorry this part is unfinished. I promise to fill this in ASAP :)
 
@@ -42,6 +42,7 @@ Sorry this part is unfinished. I promise to fill this in ASAP :)
       <li><a href="#" class="button 12u">Motors</a></div></li>
       <li><a href="#" class="button 12u">ESCs</a></div></li>
       <li><a href="#" class="button 12u">Propellers</a></div></li>
+      <li><a href="#" class="button 12u">Flight Controllers</a></div></li>
     </ul>
   </div>
 </div>
