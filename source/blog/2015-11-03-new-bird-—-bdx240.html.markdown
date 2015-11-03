@@ -1,0 +1,24 @@
+---
+title: New Bird — BDX240
+date: 2015-11-03 18:48 UTC
+tags:
+- fpv
+- build
+- red20rc
+- gopro
+---
+I have updated the [hangar](/hangar) already, but I should probably be a little more elaborate about my newest addition to the fleet. I've been flying my Sony AZ1 and Mobius simply because I was afraid to kill my Gopros. I insured my first one against damage, but then landed it with my Phantom at the bottom of the city dam, so decided not to "waste money" with the replacements. I really only flew it in a gimbal on my [Xu Gong v2](https://www.youtube.com/watch?v=bBQAW1i0Hgc). I have yet to actually write about the cameras, but suffice to say the gopro just blows everythig else with the sharpness. So I really wanted to fly the gopro. Thus the DBX240.
+
+<p class="image full">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/RVDcZidGrjc" frameborder="0" allowfullscreen>
+<a href="https://www.youtube.com/watch?v=RVDcZidGrjc">BDX240</a></iframe>
+</p>
+
+
+The BDX240 is a unique frame that's built around housing a gopro very safely. A high quality 3mm frame has a tilted plate that holds both the gopro and your boardcam. The plates fit together perfectly and the kit has a superb machining feel to it.
+
+My build is a little heavy. The heaviest setup with 1.4Ah 4S and the Gopro Hero3+ comes at 610g. That might sound a lot for a 5" rig. I'm running 5045 bullnose props and that gives plenty of punch even on 3S. With Xiaomi Yi and 1.3Ah 3S it's at 567g. I am trying to up my game in proximity acro, so I'm slowly increasing the rates and do more backflips than usual. Plenty of training to be had with this baby.
+
+One more thing worth mentioning is that I made an exception to my rule to never go back to anything by KISS and Cobra or Tiger motors. Roman Pospíšil recommended I take a look at the RCX 2205s and so I did. I also had about 8 of the dreaded SN20A that made two of my tmotors go poof. I wasn't afraid to lose a $9 motor and of course it all went fine. I guess they only eat expensive motors.
+
+Few things I want to fix before I call it done. Just like on my Blackout, just having a capacitor to clean up the video feed doesn't quite cut it. If the lighting conditions are difficult, the horizontal lines make it a challenge to see. On my SWH250s I run a [great PDB](http://www.redrotorrc.com/index.php?route=product/product&product_id=52) that includes an LC filter. But I ran out of them. I ordered some small LC filters, so hopefully I'll have a super clean video out of this one as well.
