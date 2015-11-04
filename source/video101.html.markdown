@@ -15,7 +15,14 @@ There is quite a plethora of cameras you can choose on a wide price spectrum. Bu
 
 It makes no sense to get the silver edition as the LCD is just added weight. Gopro is the king of the action cameras and deservingly so. The cameras provide the best sharpness, automatic exposure and quality. The wide angle lens has lovely anti glare coating, giving a unique tint to the footage I actually like. You can also shoot in something they call prores, a very flat profile capturing the most difficult dynamic range situatons and giving you the ability to fix or color grade/tint the footage in post. Hero4 now shoots in 4K resolution at 30 frames per second.
 
+<p class="image full">
+<img alt="" src="/images/video101/goprohero4.jpg">
+<small>Gopro Hero3 with cheap lens protector</small>
+</p>
+
 Gopro provides a free beer software package to import and fix up clips from their cameras. You can also do quick edits in it, but really the only usable feature of it is the barrel distortion compensation and slow motion interpolation. It takes forever though, I ended up creating an [Apple Motion effect](#defisheye) to fix the fish eye in realtime.
+
+Instead of getting a silver version I opted to buy some older models second hand. Hero 3+ is still a superb camera, and includes the superview at 1080/60fps as well as 2.7k at 48fps. I also have a Hero3 which doesn't do superview, but shooting 1440 (1920x1440) and stretching in post effectively gives you the same results.
 
 <div class="row">
   <div markdown="1" class="6u pros">
@@ -39,6 +46,11 @@ Gopro provides a free beer software package to import and fix up clips from thei
 
 Sony has been trying to "me too" a Gopro for quite a while and they have a big lineup of their action cameras. It's Sony, so don't expect them to play the price card. They bet on image stabilization, something they used to be kings at. However for dramatic miniquad action shots, their image stabilization is useless. The smallest of their line up is the AZ1 and it includes the steady shot as well. You'll quickly turn it off as it tends to reset with a giant jerk every time you do a sharp turn. Much more distracting than not stabilizing at all. Also soft. The camera is far from being as sharp as the Gopro. 
 
+<p class="image full">
+<img alt="" src="/images/video101/sonyaz1.jpg">
+<small>Banged up Sony AZ1 sans protector and lens ring. Lost both in a crash. Was my second already :)</small>
+</p>
+
 So why did I get it? Mainly for costing half of what the GoPro black sold for in here. It does 1080P at 60fps. It can do xavc-s, a high bitstream codec that is quite an overkill for the kind of pictures you're getting out of it. It refused to eat many cards that the GoPro hero4 shooting 4K was fine with (U1 class). It also includes bells and whistles you don't need and just add weight. Wifi is in everything, but this does NFC as well. The lens protector sony sells costs almost as much as a Mobius. Technology has progressed since and there are much better choices now if you want a cheaper GoPro (see below).
 
 <a id="defisheye"><img class="full image" src="/images/defisheye.jpg"></a>
@@ -53,7 +65,6 @@ Download and unzip the above effect into your `Movies/Motion Templates/Effects` 
   <div markdown="1" class="6u pros">
 # Pros #
 
-  - Cheaper than a GoPro
   - Lighter, tubular, thus aerodynamic.
 
   </div>
@@ -62,17 +73,87 @@ Download and unzip the above effect into your `Movies/Motion Templates/Effects` 
 # Cons #
 
   - Cheaper than a GoPro yes, but still kind of expensive
+  - Soft, even without SteadyShot
   </div>
 </div>
 
 ### Mobius ###
 
-TODO
+If you sport a small frame lik ethe 170 Kermit, you really get penalized for adding 50g+ of weight in the form of an HD cam. It messes up your center of gravity and becomes extremely demanding on the tune. You want the lightest possible camera that still produces reasonable image.
+
+The Mobius provides 1080 footage at 30 frames a second. It's quite sharp and with the new C lens a nice wide angle aesthetic. The sharpness is a bit of a cheat though as by default image sharpening is applied. The camera is also capable of running at 60fps, but on at 720P. Not really worth it. The biggest downfall of the camera is the metering. It uses a kind of spot metering and you can see visible stepping as it changes aperture. It also tends to shift in color temperature. Luckily both of these quirks can be worked around in the later firmware by holding the mode button for 3 seconds after you started recording. That locks up the exposure and color temperature so while you can get to places that will be overexposed, you wont get the dreaded blackout when you look at an overcast sky.
+
+<p class="image full">
+<img alt="" src="/images/video101/mobius.jpg">
+<small>No iterface, best interface. Note the SD card slot being taped down.</small>
+</p>
+
+Configuration is a bit spartan, but I prefer this approach to being forced to boot to Windows. You hold mode button as you power it on, the red led flashes a couple of times and a configuration file is being dumped onto the SD card, along with comments on what each configuration does. Once you edit it with your favorite text editor, save and unmount the SD card, you go through the exact process and this time the camera will read the config and delete the file, which you can check on your computer again. 
+
+I actually prefer this simplistic 3 button approach to nested menus of the gopro. There are only essential options to chose from and the camera does what we need. Push to record. Done.
+
+<div class="row">
+  <div markdown="1" class="6u pros">
+# Pros #
+
+  - Lightest camera at 47g (C-lens)
+  - Cheap (around $60)
+  </div>
+
+  <div markdown="1" class="6u cons">
+# Cons #
+  - SD card ejecs on impact, ruining your footage (and usually impossible to find in grass). Tape it.
+  - Exposure (spot metering, color balance shifts)
+  </div>
+</div>
 
 ### Xiaomi Yi ###
 
-TODO
+This camera is essentially what the AZ1 is, but a lot cheaper. In the wrong form factor. It produces well exposed 1080P/60fps footage in high enough bitrate (around 20mbit/s). The killer feature of the camera is that you can enable barrel distortion correction to happen in camera and get nice ortho-linear footage. It does make a hit on battery life though. Some models neede a bit of refocusing as the cameras were focused to about 5m rather than infinity.
+
+<p class="image full">
+<img alt="" src="/images/video101/xiaomiyi.jpg">
+<small>Light but big brick.</small>
+</p>
+
+<div class="row">
+  <div markdown="1" class="6u pros">
+# Pros #
+  - Great quality 1080/60
+  - Cheap (around $60)
+  - Well made
+  - Cheap spare parts available. Lens, protectors, batteries, chargers all cost peas.
+  </div>
+
+  <div markdown="1" class="6u cons">
+# Cons #
+  - Big brick
+  - Laggy reponse on the buttons. Takes like 5seconds to accept changes between photo and video modes after startup.
+  </div>
+</div>
 
 ### Foxeer Legend 1 ###
 
-TODO
+If you don't strive to have the lightest camera, this is close to a perfect miniquad camera. Same form factor as the Mobius, it is only a tad heavier (51g). It produces similar quality as the XIaomi Yi or the Sony AZ1. The only downside may be the exposed lens that doesn't really provide a mean to put a lens cover on. But with 3D printers, I'm sure people will have a custom protector soon. I did smash my lens about 30 minutes in :)
+
+<p class="image full">
+<img alt="" src="/images/video101/foxeerlegend1.jpg">
+<small>Best bits of every camera above. Small, aerodynamic, cheap, no-bs interface, great bitrate and quality.</small>
+</p>
+
+<div class="row">
+  <div markdown="1" class="6u pros">
+# Pros #
+
+  - Cheap (around $80)
+  - High quality 1080/60
+  - Simple UI, No BS config (might be a con if you're a tweaker)
+  </div>
+
+  <div markdown="1" class="6u cons">
+# Cons #
+  - I bought too many cameras before finding this one
+
+  </div>
+</div>
+
