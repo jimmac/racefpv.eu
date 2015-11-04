@@ -480,6 +480,12 @@ table
     span:before
       color: #e27689
 
+.centered
+  display: block
+  text-align: center
+  margin-left: auto
+  margin-right: auto
+
 /*******************************************************************************
 /* Footer
 /*******************************************************************************
@@ -532,7 +538,7 @@ code
   font-family: $mono-font
   padding: 4px
   +border-radius(3px)
-  background-color: darken($bodybg,40%)
+  background-color: $codebg
   color: #eee
   line-height: 1em
 .tag
@@ -563,7 +569,7 @@ code
 pre
   code
     +box-shadow(0,1px, 3px, rgba(0,0,0,0.3), inset)
-    +colorgradient(darken($bodybg,30%),darken($bodybg,50%))
+    +colorgradient(darken($codebg,10%),darken($codebg,10%))
     overflow-x: auto
     line-height: 1.5em
     display: block
