@@ -17,12 +17,12 @@ It makes no sense to get the silver edition as the LCD is just added weight. Gop
 
 <p class="image full">
 <img alt="" src="/images/video101/goprohero4.jpg">
-<small>Gopro Hero3 with cheap lens protector</small>
+<small>Gopro Hero4 with cheap lens protector</small>
 </p>
 
-Gopro provides a free beer software package to import and fix up clips from their cameras. You can also do quick edits in it, but really the only usable feature of it is the barrel distortion compensation and slow motion interpolation. It takes forever though, I ended up creating an [Apple Motion effect](#defisheye) to fix the fish eye in realtime.
+Gopro provides a [free beer software](http://shop.gopro.com/EMEA/softwareandapp/gopro-studio/GoPro-Studio.html) package to import and fix up clips from their cameras. You can also do quick edits in it, but really the only usable feature of it is the barrel distortion compensation and slow motion interpolation. It takes forever though, I ended up creating an [Apple Motion effect](#defisheye) to fix the fish eye in realtime.
 
-Instead of getting a silver version I opted to buy some older models second hand. Hero 3+ is still a superb camera, and includes the superview at 1080/60fps as well as 2.7k at 48fps. I also have a Hero3 which doesn't do superview, but shooting 1440 (1920x1440) and stretching in post effectively gives you the same results.
+Instead of getting a silver version I opted to buy some older models second hand. Hero 3+ is still a superb camera, and includes the superview at 1080/60fps as well as 2.7k at 48fps. What sperview essentially does is to use the native 4:3 sensor and stretch all the pixels to the output 16:9 picture. Usually the stretching would be a horrible aesthetic, but for miniquad footage this works remarkably well. The fact you get extra view on top and bottom makes you feel go faster as the eye is attracted to the fast motion on the edges of the footage. I also have a Hero3 which doesn't do superview, but shooting 1440 (1920x1440) and stretching in post effectively gives you the same results.
 
 <div class="row">
   <div markdown="1" class="6u pros">
