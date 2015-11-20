@@ -1,5 +1,5 @@
 ---
-title: New Bird — BDX240
+title: New Bird - BDX240
 date: 2015-11-03 18:48 UTC
 tags:
 - fpv
