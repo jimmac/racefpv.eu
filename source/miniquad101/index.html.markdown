@@ -37,12 +37,12 @@ Sorry this part is unfinished. I promise to fill this in ASAP :)
 <div class="row">
   <div class="6u">FIXME: Graphic</div>
   <div class="6u">
-    <ul>
-      <li><a href="#" class="button 12u">Batteries</a></div></li>
-      <li><a href="#" class="button 12u">Motors</a></div></li>
-      <li><a href="#" class="button 12u">ESCs</a></div></li>
-      <li><a href="#" class="button 12u">Propellers</a></div></li>
-      <li><a href="#" class="button 12u">Flight Controllers</a></div></li>
+    <ul class="plain">
+      <li><a href="/miniquad101/batteries/" class="button 12u">Batteries</a></li>
+      <li><a href="#" class="button 12u">Motors</a></li>
+      <li><a href="#" class="button 12u">ESCs</a></li>
+      <li><a href="#" class="button 12u">Propellers</a></li>
+      <li><a href="#" class="button 12u">Flight Controllers</a></li>
     </ul>
   </div>
 </div>

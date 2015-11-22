@@ -93,7 +93,7 @@ proxy "/log/index.html", "/feed.xml", :layout => false
 # Page options, layouts, aliases and proxies
 ###
 
-page "/miniquad101.html", :layout => "page"
+page "/miniquad101/*", :layout => "page"
 page "/video101.html", :layout => "page"
 page "/hangar.html", :layout => "page"
 

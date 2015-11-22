@@ -1,8 +1,11 @@
 = wrap_layout :layout do
   #main
     #fader.fader.jsonly
-      - list_directory("source/images/#{data.page.menu}/banner/*").each do |img|
-        %img{class:"slide", src:img}/
+      - if list_directory("source/images/#{data.page.menu}/banner/*").empty?
+        %img{class:"slide", src:"/images/banner/exoten.jpg"}/
+      - else
+        - list_directory("source/images/#{data.page.menu}/banner/*").each do |img|
+          %img{class:"slide", src:img}/
       %noscript
         :css
           #fader {
