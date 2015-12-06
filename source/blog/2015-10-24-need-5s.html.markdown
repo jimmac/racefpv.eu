@@ -12,7 +12,7 @@ The benefit of having many quads is that there' never a downtime, you always hav
 
 I intended to do that with the [SWH250](http://store.red20rc.org/shop/multirotor-frames/swh250-quadcopter/), but I was offered to test the [Bush Hunter](http://store.red20rc.org/shop/multirotor-frames/swh250-quadcopter/) upgrade so I diverged the two quads. I struggled with the DYS SN20A ESCs, burning one t-motor in the process, so I decided to go all in on the Bush Hunter. I wasn't flying the gopro on my racers, it always went onto a gimbal of the Xu Gong or the Tarot. But I have to say, the superview and shrapness of the Gopro really makes the vids much more enjoyable. I ended up getting the awesome [KISS 30A](http://flyduino.net/KISS-ESC-2-6S-30A_1) ESCs, that are quite big, but the reasoning was to eventually go 6S.
 
-<p class="image full">
+<p>
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/VOBRo_iN_pM" frameborder="0" allowfullscreen>
 <a href="https://www.youtube.com/watch?v=VOBRo_iN_pM">SWH250</a></iframe>
 <small>SWH250 on 4S (with some Blackout on 3S and Vortex 4S thrown in)</small>
