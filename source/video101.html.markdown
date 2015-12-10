@@ -51,7 +51,7 @@ Sony has been trying to "me too" a Gopro for quite a while and they have a big l
 <small>Banged up Sony AZ1 sans protector and lens ring. Lost both in a crash. Was my second already :)</small>
 </p>
 
-So why did I get it? Mainly for costing half of what the GoPro black sold for in here. It does 1080P at 60fps. It can do xavc-s, a high bitstream codec that is quite an overkill for the kind of pictures you're getting out of it. It refused to eat many cards that the GoPro hero4 shooting 4K was fine with (U1 class). It also includes bells and whistles you don't need and just add weight. Wifi is in everything, but this does NFC as well. The lens protector sony sells costs almost as much as a Mobius. Technology has progressed since and there are much better choices now if you want a cheaper GoPro (see below).
+So why did I get it? Mainly for costing half of what the GoPro black sold for in here. It does 1080P at 60fps. It can do xavc-s, a high bitstream codec that is quite an overkill for the kind of pictures you're getting out of it. It refused to eat many cards that the GoPro hero4 shooting 4K was fine with (U1 class). It also includes bells and whistles you don't need and just add weight. Wifi is in everything, but this does NFC as well. The lens protector sony sells costs almost as much as a Mobius. Technology has progressed since and there are much better choices now if you want a cheaper GoPro (see below). Also GoPro itself has lowered the price of their Session mini camera that matches Sony's pricetag and provides a superior image I would say.
 
 <a id="defisheye"><img class="full image" src="/images/defisheye.jpg"></a>
 
@@ -154,6 +154,41 @@ If you don't strive to have the lightest camera, this is close to a perfect mini
 # Cons #
   - I bought too many cameras before finding this one
 
+  </div>
+</div>
+
+### GoPro Session ###
+
+GoPro Session was introduced with a ridiculous pricetag. When it launched I thought to myself — brilliant camera if it cost half as much. Well now it does. GoPro luckily didn't scratch the product and did the dangerous thing of loweing the price. At $199 you get a brillint tiny waterproof camera, that is still heavier than may come across from photos. At 73g it's almost a Hero3+ in terms of weight. You get a lot smaller profile though and it does still pack a 1080P superview (4:3 image smartly stretched to 16:9) at up to 48frames a second. While the bitrate is the same as the Hero3+, the image isn't as sharp and the magical light metering is not as good either. But compared to the Sony AZ1 or the chinese low budget cameras, it's still a much better picture. 
+
+<p class="image full">
+<img alt="" src="/images/video101/gopro-session.jpg">
+<small>One button control is great. LCD panel shows all you need.</small>
+</p>
+
+
+I also dig the 'less is more' approach. One button press turns the camera on and starts recording the preset quality video. Holding the button does the same for time lapse photos. The set up happens in the gopro app. I very rarely change what's working for me, so this is idea.
+
+<p class="image full">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/O172oHsV19M" frameborder="0" allowfullscreen>
+<a href="https://www.youtube.com/watch?v=O172oHsV19M">GoPro Session Mini Review</a></iframe>
+</p>
+
+<div class="row">
+  <div markdown="1" class="6u pros">
+# Pros #
+
+  - Compact
+  - Water Resistant
+  - Superview makes everything feel faster
+  - microUSB rather than miniUSB
+  - easy one button operation (Presets using the phone app)
+  </div>
+
+  <div markdown="1" class="6u cons">
+# Cons #
+  - Heavy (73g)
+  - While reasonably priced, still on the expensive side, considering the options now (Legend1, Yi or Mobius are less than a half). Materials are top notch though.
   </div>
 </div>
 
