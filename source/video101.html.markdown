@@ -163,7 +163,7 @@ GoPro Session was introduced with a ridiculous pricetag. When it launched I thou
 
 <p class="image full">
 <img alt="" src="/images/video101/gopro-session.jpg">
-<small>One button control is great. LCD panel shows all you need.</small>
+<small>One button control is great. LED panel shows all you need.</small>
 </p>
 
 
