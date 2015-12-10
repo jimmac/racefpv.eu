@@ -159,7 +159,7 @@ If you don't strive to have the lightest camera, this is close to a perfect mini
 
 ### GoPro Session ###
 
-GoPro Session was introduced with a ridiculous pricetag. When it launched I thought to myself — brilliant camera if it cost half as much. Well now it does. GoPro luckily didn't scratch the product and did the dangerous thing of loweing the price. At $199 you get a brillint tiny waterproof camera, that is still heavier than may come across from photos. At 73g it's almost a Hero3+ in terms of weight. You get a lot smaller profile though and it does still pack a 1080P superview (4:3 image smartly stretched to 16:9) at up to 48frames a second. While the bitrate is the same as the Hero3+, the image isn't as sharp and the magical light metering is not as good either. But compared to the Sony AZ1 or the chinese low budget cameras, it's still a much better picture. 
+GoPro Session was introduced with a ridiculous pricetag. When it launched I thought to myself — brilliant camera if it cost half as much. Well now it does. GoPro luckily didn't scratch the product and did the dangerous thing of loweing the price. At $199 you get a brilliant tiny waterproof camera, that is still heavier than may come across from photos. At 73g it's almost a Hero3+ in terms of weight. You get a lot smaller profile though and it does still pack a 1080P superview (4:3 image smartly stretched to 16:9) at up to 48frames a second. While the bitrate is the same as the Hero3+, the image isn't as sharp and the magical light metering is not as good either. But compared to the Sony AZ1 or the Chinese low budget cameras, it's still a much better picture. 
 
 <p class="image full">
 <img alt="" src="/images/video101/gopro-session.jpg">
@@ -167,7 +167,7 @@ GoPro Session was introduced with a ridiculous pricetag. When it launched I thou
 </p>
 
 
-I also dig the 'less is more' approach. One button press turns the camera on and starts recording the preset quality video. Holding the button does the same for time lapse photos. The set up happens in the gopro app. I very rarely change what's working for me, so this is idea.
+I also dig the 'less is more' approach. One button press turns the camera on and starts recording the preset quality video. Holding the button does the same for time lapse photos. The set up happens in the gopro app. I very rarely change what's working for me, so this is ideal.
 
 <p class="image full">
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/O172oHsV19M" frameborder="0" allowfullscreen>
