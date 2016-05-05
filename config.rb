@@ -39,7 +39,7 @@ set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'images'
 set :layouts_dir, 'layouts'
-set :build_dir, '../github.racefpv'
+set :build_dir, 'build' #'../github.racefpv'
 
 
 activate :blog do |blog|
