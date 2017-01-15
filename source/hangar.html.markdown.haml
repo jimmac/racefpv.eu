@@ -8,13 +8,14 @@ menu: hangar
 
   I'm going to list all my quads setups here, along with all the NAZE32 Cleanflight/baseflight settings. This might help you get an idea what works for me and perhaps help with your own purchases/builds.
 
-  ### Blackout 220 ###
   
-  Blackout Mini H was my first racing quad. I wasn't racing back then, more like trying to keep it in the air. I believe Blackout was who started the whole miniquad craze less than 2 years ago. For today's standards it has a little bit weak plates and a high price tag. I've cracked the top plate as soon as I got fed up rebuilding it every time I crashed, because of its use of nylon spacers and screws to absorb the impact. After replacing the screws with metal, of course the plate broke. Replacement parts are available, but I chose to get a thicker top plate from [getfpv](http://www.getfpv.com/blackout-mini-h-quad-top-plate.html). The top plate alone is more expensive than some 250 kits out there :)
+  ### DALRC XR220  ###
+
+  <p class="image full">
+    <img src="/images/hangar/dal5.jpg"/>
+  </p>
   
-  I didn't get the very first revision, but the one with the PDB. Some don't like to have a full bottom plate PDB, because it's less strong, but I really love the convenience of soldering close to where the components live. I like the PDB a lot.
-  
-  I started with Sunnysky 2204/2300kv which are good motors, but wear out quickly, and cannot take 4S. Also in practical terms, the short flat motors combined with arm mounted escs meant every crash had me rip the escs out with props. Moved on to the tmotor 2204/2300kv and kiss 18a. Today I run the following setup:
+  Off the shelf frame with a unibody base. Supposedly doesn't take much beating and the PDB tends to burst into flames. I have so far been very lucky. It's a light setup and I'm sporting the supe fast racekraft 5051s making this my fastest racing frame, capable of carrying a gopro session.
 
   <table class="default small">
     <tr>
@@ -23,188 +24,114 @@ menu: hangar
     </tr>
     <tr>
       <th>Purpose:</th>
-      <td>Racer. Proximity basher.</td>
+      <td>Fast racer.</td>
     </tr>
     <tr>
       <th>Motors:</th>
-      <td>Multistar 2204/2300kv</td>
+      <td>emax 2205/2300kv red bottoms</td>
+    </tr>
+    <tr>
+      <th>ESCs:</th>
+      <td>DYS XS30A with blheli-s</td>
+    </tr>
+    <tr>
+      <th>Receiver:</th>
+      <td>rctimer s-fhss/futaba.</td>
+    </tr>
+    <tr>
+      <th>Flight Controller:</th>
+      <td>Spracing f3</td>
+    </tr>
+    <tr>
+      <th>Controller FW:</th>
+      <td>Betaflight 3.0, <a class="button small" href="/images/hangar/dal5.cfg">Download Config</a></td>
+    </tr>
+    <tr>
+      <th>Props:</th>
+      <td>Racekraft 5051</td>
+    </tr>
+    <tr>
+      <th>Power:</th>
+      <td>Acehe 75c 1300mAh 4S</td>
+    </tr>
+    <tr>
+      <th>Board Camera:</th>
+      <td>Foxeer hs1177, 2.5mm lens</td>
+    </tr>
+    <tr>
+      <th>HD Camera:</th>
+      <td>GoPro Session 5</td>
+    </tr>
+  </table>       
+:markdown
+  
+  ### PLAto ###
+
+  <p class="image full">
+    <img src="/images/hangar/PLAto.jpg"/>
+  </p>
+    
+  For indoor racing with a 250g limit, this guy comes at around 210g with an 800mAh graphene 3S. The frame is  great [design by t4b](http://www.thingiverse.com/thing:1783281), printed with PLA. The frame should probably be cut from CF, but so far it has survived my "soft landings".
+  
+  I've design a custom [camera canopy](http://www.thingiverse.com/thing:2033337) that holds the Aomway 600tvl camera that gives a better picture than the 170 degree micro cameras usually used in such small builds.
+  
+  I started with emax 1306 motors, but the DYS 1407/3600kv are way more powerful with only a slight increase of weight. Definitely recommend going 1407.
+
+  <table class="default small">
+    <tr>
+      <th class="header">Size:</th>
+      <td>110mm</td>
+    </tr>
+    <tr>
+      <th>Purpose:</th>
+      <td>Indoor racer. Capable of carrying the Mobius Mini HD camera.</td>
+    </tr>
+    <tr>
+      <th>Motors:</th>
+      <td>DYS 1407/3600kv</td>
     </tr>
     <tr>
       <th>ESCs:</th>
       <td>KISS 18A v1.2</td>
     </tr>
     <tr>
-      <th>Receiver:</th>
-      <td>Futaba R2008SB (Connected via SBUS inverter cable)</td>
-    </tr>
-    <tr>
       <th>Flight Controller:</th>
-      <td>NAZE32 rev5</td>
+      <td>FuriousFPV PICOBLX F3</td>
     </tr>
     <tr>
       <th>Controller FW:</th>
-      <td>Betaflight 2.6.1, PID1 &amp; <a class="button small" href="/images/hangar/blackout220.cfg">Download Config</a></td>
+      <td>Betaflight 3.0.1 <a class="button small" href="/images/hangar/PLAto.cfg">Download Config</a></td>
     </tr>
     <tr>
       <th>Props:</th>
-      <td>DYS 5045BN3 Triblades / DYS 5045 Bullnose v2</td>
+      <td>DAL 3030x3 or Kingkong 3030</td>
     </tr>
     <tr>
       <th>Power:</th>
-      <td>Nanotech 1300mAh 4S 45C / Tattu 1300 4S 75C(big lie) / ASPEC Turnigy 1300mAh 3S 60C</td>
+      <td>Acehe 75c 800mAh 3S or Turnigy Graphene 800mAh 3S</td>
     </tr>
     <tr>
       <th>Board Camera:</th>
-      <td><a href="http://www.securitycamera2000.com/products/HD-700TVL-Color-Board-Camera-1%7B47%7D3-Inch-SONY-CCD-D%252dWDR-w%7B47%7D-OSD-Menu-BNC.html">Sony 700TVL (CMR1385H-L28) with 2.8mm lens</a></td></td>
+      <td>Aomway 600 TVL.</td>
     </tr>
     <tr>
       <th>HD Camera:</th>
-      <td>GoPro Hero3 / GoPro Hero3+</td>
-    </tr>
-  </table>    
-  
-  ### Skunkworks 250 ###
-
-  <p class="image full">
-    <img src="/images/hangar/swh250.jpg"/>
-  </p>
-  
-  I was really intrigued by the curves of this frame cut by [Mike Walters](http://red20rc.org) and designed by [Adam Dube](https://instagram.com/skunkworxhobbies). Large enough to fit 6" props and having plenty of room for components I use this quad for both fast 4S freestyle and proximity. I have crashed it a couple of times with no effect on the frame. I did break the prototype frame by falling about 50 meters, but that weakness has been quickly addressed in the next iteration. You can currently get the frame with a super low profile, which benefits rigidity.
-  
-  Built for 6" props, the quad is fast even on 3S, but really shines on 4S. It had instant torque and the 2000kv t-motors were able to fly very smoothly. But the constant speed greed has pushed me to upgrade to x-nova 2206/2000kv. These motors have the oomph, but are too hungry for the kiss 18a so I upgraded to 24A.
-
-  <p><div class="row">
-    <div class="6u">
-      <blockquote class="instagram-media" data-instgrm-version="5" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/4XS_0IEKAG/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A video posted by Jakub Steiner (@jimmacfx)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-06-25T19:33:37+00:00">Jun 25, 2015 at 12:33pm PDT</time></p></div></blockquote>
-    </div>
-    <div class="6u">
-      <blockquote class="instagram-media" data-instgrm-version="5" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/4M114vEKHY/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A video posted by Jakub Steiner (@jimmacfx)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-06-21T18:06:27+00:00">Jun 21, 2015 at 11:06am PDT</time></p></div></blockquote>
-    </div>
-  </div></p>
-    
-  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-
-  <table class="default small">
-    <tr>
-      <th class="header">Size:</th>
-      <td>250mm</td>
-    </tr>
-    <tr>
-      <th>Purpose:</th>
-      <td>Fast racer. Small enough for park proximity.</td>
-    </tr>
-    <tr>
-      <th>Motors:</th>
-      <td>X-Nova MN2206/2000kv</td>
-    </tr>
-    <tr>
-      <th>ESCs:</th>
-      <td>KISS 24A</td>
-    </tr>
-    <tr>
-      <th>Receiver:</th>
-      <td>Futaba R2008SB (Connected via SBUS inverter cable)</td>
-    </tr>
-    <tr>
-      <th>Flight Controller:</th>
-      <td>NAZE32 rev5</td>
-    </tr>
-    <tr>
-      <th>Controller FW:</th>
-      <td>Borisb' Betaflight 2.2.0, PID1 &nbsp; <a class="button small" href="/images/hangar/swh250.cfg">Download Config</a></td>
-    </tr>
-    <tr>
-      <th>Props:</th>
-      <td><a href="http://www.banggood.com/KINGKONG-6040-Propellers-CW-CCW-10-Pairs-For-QAV250-RC-Multirotors-p-988179.html">Kingkong 6040</a>, <a href="http://miniquadfpv.com/product/thugprops-6045-6x4-5-glass-composite-full-set/">Glass Composite Thugprops 6045</a></td>
-    </tr>
-    <tr>
-      <th>Power:</th>
-      <td>Xtron 1550mAh or 1300mAh 40C (best batteries I have), Tattu 1300mAh 75C (hardly accurate), Multistar 1400mAh 4S 40C</td>
-    </tr>
-    <tr>
-      <th>Board Camera:</th>
-      <td><a href="http://www.securitycamera2000.com/products/HD-700TVL-Color-Board-Camera-1%7B47%7D3-Inch-SONY-CCD-D%252dWDR-w%7B47%7D-OSD-Menu-BNC.html">Sony 700TVL (CMR1385H-L28) with 2.8mm lens</a></td></td>
-    </tr>
-    <tr>
-      <th>HD Camera:</th>
-      <td>GoPro Session</td>
+      <td>Mobius Mini</td>
     </tr>
   </table>       
+
 :markdown
   
-  ### Skunkworks 170 Kermit ###
+  ### Red20RC BDX Racer ###
 
   <p class="image full">
-    <img src="/images/hangar/swh180-kermit.jpg"/>
+    <img src="/images/hangar/bdxr.jpg"/>
   </p>
     
-  Smallest of the Skunkworks family, the [Kermit](http://store.red20rc.org/shop/multirotor-frames/swh170-kermit-micro-quadcopter/) is an amazing frame. Mike now sells it with 3D printed ABS skirts that cover all the components and it makes for a super clean build. Mine isn't as clean, with the classic spacer open look, but I love it nevertheless. It weighs around 250g with a 3S 1Ah battery and that gives enough juice for over 5 minutes. And it's not sluggish flight either. This quad is an example of how weight kills performance, or rather, how lack of weight makes it a rocket. Even on 3S. Those tiny 1306/3100kv motors give quite a punch and sound amazing.
-
-  <table class="default small">
-    <tr>
-      <th class="header">Size:</th>
-      <td>170mm</td>
-    </tr>
-    <tr>
-      <th>Purpose:</th>
-      <td>Mini basher. Dare to fly through any gap. Perfect for parks (and garages).</td>
-    </tr>
-    <tr>
-      <th>Motors:</th>
-      <td>Sunnysky 1306/3100kv</td>
-    </tr>
-    <tr>
-      <th>ESCs:</th>
-      <td>DYS SN20A with BLHeli 14.1</td>
-    </tr>
-    <tr>
-      <th>Flight Controller:</th>
-      <td>EMAX Skyline32 Acro (NAZE32)</td>
-    </tr>
-    <tr>
-      <th>Controller FW:</th>
-      <td>Betaflight 2.2.0, PID1 <a class="button small" href="/images/hangar/swh170-kermit.cfg">Download Config</a></td>
-    </tr>
-    <tr>
-      <th>Props:</th>
-      <td>Gemfan 4045 or KingKong 6040 cut down to bullnose 4040. indestructable props, but your motor bell will come off for sure.</td>
-    </tr>
-    <tr>
-      <th>Power:</th>
-      <td>ASPEC Turnigy 1300mAh 3S 60C, 1000mAh or 850mAh</td>
-    </tr>
-    <tr>
-      <th>Board Camera:</th>
-      <td>Aomway 600 TVL with larger 2.1mm lens that's actually narrower than the default 2.8mm due to the sensor being smaller.</td>
-    </tr>
-    <tr>
-      <th>HD Camera:</th>
-      <td>Mobius</td>
-    </tr>
-  </table>       
-:markdown
-  The best part of a small quad like that is that you dare to fit into the smallest of places and can take it long your airplane travels. Crashes are a non issue, because of the small mass. I did hit a tree at full speed and broke the motor (well just pulled it apart as it' essentially held by a tiny c clip. You lose the top bearings in the process most of the times, but those are possible to get. No need to buy the whole motor.
-
-  <p><div class="row">
-    <div class="6u">
-      <blockquote class="instagram-media" data-instgrm-version="5" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/8ioC5cEKJ8/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A video posted by Jakub Steiner (@jimmacfx)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-10-07T15:14:46+00:00">Oct 7, 2015 at 8:14am PDT</time></p></div></blockquote>
-    </div>
-    <div class="6u">
-      <blockquote class="instagram-media" data-instgrm-version="5" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/7x23GOEKPW/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A video posted by Jakub Steiner (@jimmacfx)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-09-18T16:41:27+00:00">Sep 18, 2015 at 9:41am PDT</time></p></div></blockquote>
-
-    </div>
-  </div></p>
-
-  ### BDX240 ###
+  I've got 4 BDX Racer quads suitable for both racing and freestyle. As the weight is becoming an issue with non-unibody frames, I'm slowly phasing out the BDXR from racing and keeping them as my day to day bashers/freestyle quads.
   
-  Another addition to the fleet is the small, but chunky frame that looks like nothing else out there. Precisely machined by Mike Walters out of super fine 3mm carbon fibre, it's been designed by *steadly1* to house a gopro style camera (xiaomi yi works fine). It can only run 5" props, but on 4S and 5045 bullnose it is a beast. Already crashed it numerous times, landing on asphalt and only leaving a few scratches on the edges.
+  I've finally bought the Connex Prosight HD system and one of the BDXRs is equipped with that. Overall the BDXR is still light enough to be competititve and is extremely durable. Been through some very rough crashes. The early designs had a weakness in the camera housing, but that has since been resolved.
 
-  <p class="row">
-        <img class="image 4u" src="/images/hangar/bdx240-1.jpg"/>
-        <img class="image 4u" src="/images/hangar/bdx240-2.jpg"/>
-        <img class="image 4u" src="/images/hangar/bdx240-3.jpg"/>
-  </p>
-  
   <table class="default small">
     <tr>
       <th class="header">Size:</th>
@@ -212,98 +139,39 @@ menu: hangar
     </tr>
     <tr>
       <th>Purpose:</th>
-      <td>Flying GoPro. Fast proximity flyer with the gopro safely protected by a thick rollcage.</td>
+      <td>Freestyle</td>
     </tr>
     <tr>
       <th>Motors:</th>
-      <td>Cheap "Cobra Quality" RCX 2205/2350kv</td>
+      <td>emax 2205/2300kv red bottoms</td>
     </tr>
     <tr>
       <th>ESCs:</th>
-      <td>DYS SN20A running Blheli 14.1 with oneshot125 and dampened light.</td>
+      <td>KISS 24A, DYS XS20A with blheli-s</td>
     </tr>
     <tr>
       <th>Flight Controller:</th>
-      <td>Emax Skyline32 Acro (NAZE32 clone)</td>
+      <td>Spracing F3</td>
     </tr>
     <tr>
       <th>Controller FW:</th>
-      <td>Borisb' Betaflight 2.2.0, PID1 &nbsp; <a class="button small" href="/images/hangar/bdx240.cfg">Download Config</a></td>
+      <td>Betaflight 3.0 <a class="button small" href="/images/hangar/bdxr.cfg">Download Config</a></td>
     </tr>
     <tr>
       <th>Props:</th>
-      <td>Kingkong 5040 / DYS 5045 Bullnose v2</td>
+      <td>Rotorama 5040x3, Racekraft 5051, DAL 5045x3</td>
     </tr>
     <tr>
       <th>Power:</th>
-      <td>Xtron 1550mAh or 1300mAh 40C (best batteries I have), Tattu 1300mAh 75C (hardly accurate), Multistar 1400mAh 4S 40C</td>
+      <td>Acehe 75c 1300mAh or 1500mAh 4S, Turnigy 1300mAh 65c 4S</td>
     </tr>
     <tr>
       <th>Board Camera:</th>
-      <td>Foxeer 600TVL CCD</td>
+      <td>Foxeer HS177 with 2.5 or 2.1mm lens</td>
     </tr>
     <tr>
       <th>HD Camera:</th>
-      <td>Gopro HERO3,3+ or 4 Black. Xiaomi Yi</td>
+      <td>Gopro Session 5</td>
     </tr>
-  </table>
-
-  I didn't like the SN20A for burning two t-motors for me. One mid flight and one just arming the thing. Might have been the `demag` being left at low, rather than disabled, but I've had no such issues with the same Blheli settings on the ZTW Spider ESCs. Once you have them configured they work rather good. Because of this experience I chose to try out the RCX "cobras" that were recommended to me. They are light and well built. The ball bearings felt very good, but RCX is not known for good quality and I expected the bell to fall apart on crash. After hitting the pavement and brushing away a good part of the shaft thread, the bell is perfectly serviceable and unbent (unlike my Sunnysky experience).
-  
-  The quad is heavier (608g with the 4S) and you do have to fight the momentum on turns, but it makes it super smooth for footage. And after flying a lot of az1, xiaomi yi and legend1 I can really appreciate the sharpness, exposure and feel of the superview on the hero3+. If you want the best footage regardless of the price, just fly a gopro. And with this frame, the risk of destroying the gopro is the lowest. It really is a frame that has been designed around safety of the camera. 
-
-  ### BDX Racer ###
-  
-  Another great design by *steadly1* and produced by Mike Walters is the BDX Racer. It can be had in 5", 5.5" and 6" variations, and all share a super light body with a nice cage for the fpv cam. The frame comes at around 85g, competing with simple X frames. Another notable feature is the way you can mount the fpv camera and get adjustable angle. Either you mount the swivel camera onto the side panels like every other frame, or use the included 3d printed holder that attaches to the lens and fixes itself onto the horizontal standoff.
-
-  <p class="row">
-        <img class="image full" src="/images/hangar/bdxr.jpg"/>
-  </p>
-  
-  <table class="default small">
-    <tr>
-      <th class="header">Size:</th>
-      <td>240mm</td>
-    </tr>
-    <tr>
-      <th>Purpose:</th>
-      <td>Racer. Light & Fast</td>
-    </tr>
-    <tr>
-      <th>Motors:</th>
-      <td>Emax Red Bottoms 2205/2300kv</td>
-    </tr>
-    <tr>
-      <th>ESCs:</th>
-      <td>KISS 24A</td>
-    </tr>
-    <tr>
-      <th>Flight Controller:</th>
-      <td>SPF3 clone</td>
-    </tr>
-    <tr>
-      <th>Controller FW:</th>
-      <td>Betaflight 2.6.1; <a class="button small" href="/images/hangar/bdxr.cfg">Download Config</a></td>
-    </tr>
-    <tr>
-      <th>Props:</th>
-      <td>DYS T5040 racing or DYS 5x4x3 Bullnose</td>
-    </tr>
-    <tr>
-      <th>Power:</th>
-      <td>Xtron 1550mAh or 1300mAh 40C or Turnigy Graphene 1300mAh 4S 45C</td>
-    </tr>
-    <tr>
-      <th>Board Camera:</th>
-      <td>Foxeer HS1177</td>
-    </tr>
-    <tr>
-      <th>HD Camera:</th>
-      <td>Gopro Session</td>
-    </tr>
-  </table>
-
-  I used to run kiss18a and t-motor 2204/2300kv, but upgraded it recently to a powerful beast combo of kiss24a and emax red bottoms. Apart from the original 5" frame I also built a 5.5" variant with 2600kv motors that is just crazy fast.
-
-  I like how I can strap a gopro session drectly on the frame with no holder necessary. I just dress it up in a [ring](http://www.thingiverse.com/thing:1442366) printed from a flexi material these days, just in case I brush the concrete with it yet again. 
+  </table>       
 
