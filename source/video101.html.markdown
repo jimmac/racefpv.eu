@@ -136,6 +136,8 @@ This camera is essentially what the AZ1 is, but a lot cheaper. In the wrong form
 
 If you don't strive to have the lightest camera, this is close to a perfect miniquad camera. Same form factor as the Mobius, it is only a tad heavier (51g). It produces similar quality as the XIaomi Yi or the Sony AZ1. The only downside may be the exposed lens that doesn't really provide a mean to put a lens cover on. But with 3D printers, I'm sure people will have a custom protector soon. I did smash my lens about 30 minutes in :)
 
+I've bought 2 more cameras and I have to say the initial impression was wildly misleading. An action camera needs to be able to take some beating and I'm afraid to say the way the battery is located inside makes this camera very prone to damage on impact.
+
 <p class="image full">
 <img alt="" src="/images/video101/foxeerlegend1.jpg">
 <small>Best bits of every camera above. Small, aerodynamic, cheap, no-bs interface, great bitrate and quality.</small>
@@ -153,6 +155,7 @@ If you don't strive to have the lightest camera, this is close to a perfect mini
   <div markdown="1" class="6u cons">
 # Cons #
   - I bought too many cameras before finding this one
+  - The battery is not attached well and a hard crash will ruin the camera :/
 
   </div>
 </div>
@@ -192,3 +195,6 @@ I also dig the 'less is more' approach. One button press turns the camera on and
   </div>
 </div>
 
+### GoPro Session 5 ###
+
+Gopro has since updated its most compact camera to version 5. It has a faster process and is now on par with the Hero4 Black in terms of quality. I personally stick to the super sharp and wide 2.7k superview. It is a tad pricier than the session4, unfortunately.
