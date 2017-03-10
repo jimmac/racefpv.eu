@@ -135,6 +135,22 @@ helpers do
     r = url_for Middleman::Util.normalize_path(dirty_URL)
     r.sub(/\/$/, '')
   end
+  
+  def youtube(hash, description)
+    "<p>
+    <iframe width='100%' height='500' src='https://www.youtube.com/embed/#{hash}' frameborder='0' allowfullscreen>
+    <a href='https://www.youtube.com/watch?v=#{hash}'></a>#{description}</iframe>
+    </p>"
+  end
+  
+  def vimeo(hash, description)
+    "<p class='image full'>
+    <iframe src='https://player.vimeo.com/video/#{hash}' height='500' class='image full' frameborder='0'
+    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <small><a href='https://vimeo.com/#{hash}'>#{description}</a> from <a href='https://vimeo.com/jimmacfx'>jimmac</a> on <a href='https://vimeo.com'>Vimeo</a>.</small>
+    </p>"
+  end
+  
 end
 
 #activate :thumbnailer,
