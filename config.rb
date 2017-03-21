@@ -151,6 +151,13 @@ helpers do
     </p>"
   end
   
+  def img(file, description, cls='full')
+    cesta = blog.articles[0].path.gsub(/\.html$/,'')
+    "<p class='image #{cls}'>
+      <img alt='#{description}' src='/#{cesta}/index/#{file}'>
+      <small>#{description}</small>
+    </p>"
+  end
 end
 
 #activate :thumbnailer,
