@@ -1,7 +1,7 @@
 - title: Journal
   link: "#blog"
-- title: Getting&nbsp;Started
-  link: "/miniquad101"
+  #- title: Getting&nbsp;Started
+  #  link: "/miniquad101"
 - title: Cameras
   link: "/video101"
 - title: Hangar
