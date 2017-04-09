@@ -57,7 +57,7 @@ activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = ":year-:month-:day-:title/index.html" #isn't that what automatic directory indexes shoudl do?
   blog.layout = "post"
-  blog.default_extension = ".markdown"
+  blog.default_extension = ".markdown.erb"
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
 
@@ -96,6 +96,7 @@ proxy "/log/index.html", "/feed.xml", :layout => false
 page "/miniquad101/*", :layout => "page"
 page "/video101.html", :layout => "page"
 page "/hangar.html", :layout => "page"
+page "/", :layout => "page"
 
 # Per-page layout changes:
 # 
