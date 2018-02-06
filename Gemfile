@@ -26,3 +26,6 @@ gem "middleman-deploy"
 
 #bootstrap
 gem "bootstrap-sass" # "3.0.0"
+
+gem "middleman-google-analytics", '~> 2.1'
+

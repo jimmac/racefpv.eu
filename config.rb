@@ -75,6 +75,10 @@ end
 page "/feed.xml", :layout => false
 proxy "/log/index.html", "/feed.xml", :layout => false
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-68811788-1'
+end
+
 
 ### 
 # Compass
