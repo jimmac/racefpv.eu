@@ -1,0 +1,25 @@
+---
+title: Crossfire on the Frsky X-Lite
+date: 2018-05-30 09:14 UTC
+tags:
+- crossfire
+- tbs
+- frsky
+- taranis
+- config
+- howto
+---
+
+The short version: It is perfectly possible to run both the "fullsize" and the "micro" versions of the Crossfire TX on the nex small Frsky X-Lite radio. Or I should say controller. Love the thing.
+
+You simply disable the internal module and enable CRSF for the external one. Just like any other Frsky radio/opentx. The pins map perfectly sequentially (see schematic below). There are three extra pis on the X-lite you won't need.
+
+<%= partial "blog/2018-05-30-crossfire-on-the-frsky-x-lite/ports.svg" %>
+
+Be very careful when opening the radio, and <eM>remove the SD card</em> prior to opening. I've broken my SD and shorted it so that smoke came out during the live stream and I burnt myself :) Surprisingly the card reader survived.
+
+<%= img 'xlitecrsf.jpg', 'Still quite compact with the fullsize CRSF TX.' %>
+
+Here's the whole live stream I got the CRSF working. Most of it is in Czech, but there is an english summary at the end.
+
+<%= youtube "cNU0Jn2cT3A", "Crossfire on the X-Lite Summary" %>
