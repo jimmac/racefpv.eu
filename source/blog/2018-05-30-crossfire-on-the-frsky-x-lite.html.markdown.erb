@@ -8,9 +8,10 @@ tags:
 - taranis
 - config
 - howto
+- xlite
 ---
 
-The short version: It is perfectly possible to run both the "fullsize" and the "micro" versions of the Crossfire TX on the nex small Frsky X-Lite radio. Or I should say controller. Love the thing.
+The short version: It is perfectly possible to run both the "fullsize" and the "micro" versions of the Crossfire TX on the small Frsky X-Lite radio. Or I should say controller. Love the thing.
 
 You simply disable the internal module and enable CRSF for the external one. Just like any other Frsky radio/opentx. The pins map perfectly sequentially (see schematic below). There are three extra pis on the X-lite you won't need.
 
@@ -27,3 +28,13 @@ Here's the whole live stream I got the CRSF working. Most of it is in Czech, but
 I'm very excited about the compactness of it all. One thing I ran into is the power button seemingly getting stuck, but the button itself seemed fine harware wise. Hopefully just an opentx quirk, we're still running nightlies after all. 
 
 Because my Taranis once got stuck booting and removing the pill battery from the board helped, I've opened up the X-lite during the live stream only to find out this trick didn't work this time. I followed the excellent disassembly article full of high qulity images on <a href="https://rotorbuilds.com/review/12507">rotorbuilds</a>.
+
+<h2>Update — No JR module bay</h2>
+
+I've finally managed to get a nice compact package with the X_lite and the Crossfire TX. So compact, that is actually fits into the original case, after removing the antenna. The sticks probably do need the covers to avoid damage this way though.
+
+The schematic below shows how to wire the TX directly to the pins if you want to use the CRSF protocol. For PPM you only need 2,3 and 5. If you figure out how to make the lua scripts to work with adirect hookup, feel free to let me know in the comments.
+
+<%= partial "blog/2018-05-30-crossfire-on-the-frsky-x-lite/direct.svg" %>
+
+<%= youtube "gcBbFYKdBDA", "Crossfire on the X-Lite with no JR Module bay" %>
