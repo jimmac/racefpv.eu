@@ -156,8 +156,8 @@ helpers do
     </p>"
   end
   
-  def img(file, description, cls='full')
-    cesta = blog.articles[0].path.gsub(/\.html$/,'')
+  def img(file, description, current_page, cls='full')
+    cesta = current_page.gsub(/\.html$/,'')
     "<p class='image #{cls}'>
       <img alt='#{description}' src='/#{cesta}/index/#{file}'>
       <small>#{description}</small>
