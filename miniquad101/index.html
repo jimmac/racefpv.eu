@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Race FPV</title>
+<meta content='text/html; charset=UTF8' http-equiv='content-type'>
+<meta content='fpv racing for beginners' name='description'>
+<meta content='jimmac red20rc fpv multirotor racing quad' name='keywords'>
+<link href='/images/icons/favicon.png' rel='icon' type='image/png'>
+<link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+<!-- %link{rel:"stylesheet", "type" => "text/css", href:"https://fonts.googleapis.com/css?family=Montserrat:400,700"}/ -->
+<link href='https://fonts.googleapis.com/css?family=Exo+2:200,100,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='/css/fontawesome.css' rel='stylesheet'>
+<link href='/css/lightbox.css' rel='stylesheet'>
+<link href='/feed.xml' rel='alternate' title='Jakub Steiner (Atom)' type='application/rss+xml'>
+<!--[if lte IE 8]> <script src="js/html5shiv.js"></script> <![endif]-->
+<script src='/js/jquery.min.js'></script>
+<script src='/js/lightbox.js'></script>
+<script src='/js/skel.min.js'></script>
+<script src='/js/skel-panels.min.js'></script>
+<script src='/js/init.js'></script>
+</head>
+<body>
+<noscript>
+<link href='/css/skel-noscript.css' rel='stylesheet'>
+<link href='/css/style.css' rel='stylesheet'>
+<link href='/css/style-wide.css' rel='stylesheet'>
+</noscript>
+<!--[if lte IE 9]> <link rel="stylesheet" href="css/ie9.css" /> <![endif]-->
+<!--[if lte IE 8]> <link rel="stylesheet" href="css/ie8.css" /> <![endif]-->
+<!-- Header -->
+<div class='skel-panels-fixed' id='header'>
+<div class='top'>
+<!-- Logo -->
+<a href='/' id='logo'>
+<div class='image avatar48'></div>
+<h1 id='title'>
+Race FPV
+</h1>
+<span class='byline'>
+Build. Crash. Repeat.
+</span>
+</a>
+
+<!-- Nav -->
+<nav id='nav'>
+<ul>
+<li>
+<a href='/#blog'><span>Journal</span></a>
+</li>
+<li>
+<a href='/video101'><span>Cameras</span></a>
+</li>
+<li>
+<a href='/hangar'><span>Hangar</span></a>
+</li>
+<li>
+<a href='/#photos'><span>Photos</span></a>
+</li>
+<li>
+<a href='/#about'><span>About Me</span></a>
+</li>
+</ul>
+</nav>
+<aside>
+<h5>By Year</h5>
+<ul>
+<li>
+<a href="../blog/2018.html">2018</a>
+<span class='tagcount'>
+(5)
+</span>
+</li>
+<li>
+<a href="../blog/2017.html">2017</a>
+<span class='tagcount'>
+(5)
+</span>
+</li>
+<li>
+<a href="../blog/2016.html">2016</a>
+<span class='tagcount'>
+(2)
+</span>
+</li>
+<li>
+<a href="../blog/2015.html">2015</a>
+<span class='tagcount'>
+(9)
+</span>
+</li>
+</ul>
+<h5>
+<a href="/tags">By Tags</a>
+</h5>
+</aside>
+</div>
+<div class='bottom'>
+<!-- Social Icons -->
+<ul class='icons'>
+<li>
+<a class='fa fa-youtube solo' href='http://www.youtube.com/channel/UCvteAidIfQtf2FkUzxr8QVg/feed'>
+<span>Youtube</span>
+</a>
+</li>
+<li>
+<a class='fa fa-vimeo-square solo' href='http://vimeo.com/jimmacfx'>
+<span>Vimeo</span>
+</a>
+</li>
+<li>
+<a class='fa fa-instagram solo' href='http://instagram.com/jimmacfx'>
+<span>Instagram</span>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div class='main' role='main'><div id='main'>
+<div class='fader jsonly' id='fader'>
+<img class='slide' src='/images/miniquad101/banner/bo220.jpg'>
+<noscript>
+<style>
+  #fader {
+    display: none;
+  }
+</style>
+<img class='slide' src='/images/banner/exoten.jpg'>
+</noscript>
+</div>
+<section>
+<div class='container'>
+<h2 id="miniquad-101">MiniQuad 101</h2>
+
+<p>Starting with FPV can be a little overwhelming, so I decided to put some essential info to help you understand how things work and have an easier job building your quad or buying components.</p>
+
+<h3 id="how-does-it-fly-so-smoothly">How Does It Fly So Smoothly?</h3>
+
+<p>The most appealing thing about miniquads to me was just how smooth of a flight people like <a href="https://www.youtube.com/user/juz70">Juz70</a> are able to achieve. A fixed wing can get you very far and fly for a very long time, but you never get such awesome fluidity with no turbulence jerks. The trick is microprocessors, and using the propellers to go all directions, not just forward. While the concept is easy and can be found in any household thermostat, at the heart of this smooth flight is a <em>flight controller</em> that runs a program called PID controller (enjoy the vague terminology). PID stands for Proprotional, Integral and Derivative and I try to explain the concept in detail in this <a href="/blog/2015-10-15-the-chore-of-tuning-pids/" class="button small">PID tuning article</a>.</p>
+
+<p>Suffice to say, regardless of the size and windy conditions out there, the software is able to compensate for all of that and take your fluid thumb movements and transform it into a gorgeous flight and your gopro can record a lovely session you then post on youtube. Once you learn to fly, that is. And build. And edit video. While many Flight Controllers allow to stabilize the craft on their own or even allow to fly autonomously, to get smooth footage you have to forget about all those aids and learn to fly so called <em>rate mode</em>.</p>
+
+<h3 id="terminology">Terminology</h3>
+
+<p>To be able to navigate the lingo, here’s some technical terms used.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Term</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code>3S</code></td>
+      <td style="text-align: left">Battery voltage. S refers to <em>series</em> and defines how many cells are connected into a single unit. Each cell has a nominal voltage of 3.3V. Lithium Polymer batteries that are used can give a lot of juice and are relatively light. See <em>C rating</em> below.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code>Band 2.4Ghz/5.8GHz</code></td>
+      <td style="text-align: left">Most countries don’t require a license for transmitting on the 2.4 and 5.8 frequency spectrum. It’s the same spectrum Wi-Fi networks operate on. Some areas might be more difficult to fly in, due to interference. It is common to have the control link at 2.4GHz and the video downlink at 5.8Ghz.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code>C-rating</code></td>
+      <td style="text-align: left">Instead of given the current at which the battery can be discharged (A), this values is labeled as C, which takes the capacity into consideration. A <code>C</code> rating of 40 for a battery that has a capacity of <em>2000mAh</em> means, that you can discharge (“feed the motors”) at 80 amps. Sometimes an extra value is provided, called <em>burst</em> and that signifies that for a short amount of time (cca 1,2 seconds) the battery can provide more power than the base C rating. Sometimes you also get a charge C rating, that tells you how much current you can feed the battery when changing. Typically the rule of thumb is to use 1C for changing. Low C rating batteries are fine in larger capacity or non-performance multirotors, but for small capacities and quick flying you want to go 40C and above. That way you avoid so called battery sack. This happens when you give full throttle for a while, do a flip and then need to give it full throttle again, but the battery isn’t able to provide it anymore and there is no thrust response (and you crash, typically).</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code>BEC</code></td>
+      <td style="text-align: left"><em>Battery Elimination Circuit</em>. A device that can either lower (step down) voltage or increase voltage (step up). Useful for powering everything from a single battery, even when components need different voltage. Typically receivers, cameras and GPS units require 5V, while transmitters 12V.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code>ESC</code></td>
+      <td style="text-align: left"><em>Electronic Speed Controller</em>. The kind of motors used in miniquads is called ‘brushless’. It is very durable and doesn’t wear out like classical brushed motors. However they do need a special speed controller to make them spin. The ESC is connected to the motor with three wires that the ESC sends short pulses through and makes the motor spin. Typically to make the motor spin the other direction, you pick any two of the three wires and switch them.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code>OSD</code></td>
+      <td style="text-align: left"><em>On Screen Display</em>. Typicaly to get some essential information from the quad, instead of transmitting the <em>telemetry</em> to the radio, which you don’t see when flying FPV, you get an overlay on top of your video feed. Most useful is either the voltage or sometimes even current draw and capacity. Also the name of the pilot is sometimes shown for competitions.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code>VTX</code></td>
+      <td style="text-align: left"><em>Video transmitter</em>. All video transmissions are analog and free to “tap in” by anyone. Thus taking part in competitions can be more fun for the audience if shown on big screens or enjoyed through FPV goggles. See <em>OSD</em>. Typically 5.8Ghz is used for the transmission because it’s commonly license-free and antennas are small and there is no harmonic interference with the control link at 2.4GHz. When multiple people are flying, extra care must be given when tuning on your quad as a conflicting frequency can blank the flying pilot. Most VTX’ also blast across the whole band before initializing so it’s a common practice to annouse tunring on a quad so pilots can gain altitude to cope with signal loss better.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="components">Components</h3>
+
+<p>Building a quad is like building a PC. It’s just a matter of picking the right components and hooking them together. No big deal. Unless you use crappy components. And buggy software. Or suck at soldering. In any case, there is an easy path these days, as many manufactures provide RTF kits (ready to fly). Sometimes also called ARTF (almost ready to fly), as you will need to provide your own radio (“stick controller”) and a receiver (the thing that receives your control commands and forwards it to the flight controller.</p>
+
+<p>Sorry this part is unfinished. I promise to fill this in ASAP :)</p>
+
+<div class="row">
+  <div class="6u">FIXME: Graphic</div>
+  <div class="6u">
+    <ul class="plain">
+      <li><a href="/miniquad101/batteries/" class="button 12u">Batteries</a></li>
+      <li><a href="#" class="button 12u">Motors</a></li>
+      <li><a href="#" class="button 12u">ESCs</a></li>
+      <li><a href="#" class="button 12u">Propellers</a></li>
+      <li><a href="#" class="button 12u">Flight Controllers</a></li>
+    </ul>
+  </div>
+</div>
+
+</div>
+</section>
+</div>
+</div>
+<!-- Footer -->
+<div id='footer'>
+<!-- Copyright -->
+<div class='copyright'>
+<p>Technology enabled out of body experience.</p>
+</div>
+</div>
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-68811788-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
+<script>
+  $("#nav a[href='/miniquad101']").addClass('active'); //select the menu. ouch, I know.
+  $('#fader').easyFader({
+    slideDur: 3000,
+    fadeDur: 1000
+  });
+</script>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Race FPV — TBS Smart Audio Unify Nano Channel Settings
+</title>
+<meta content='text/html; charset=UTF8' http-equiv='content-type'>
+<meta content='fpv racing for beginners' name='description'>
+<meta content='jimmac red20rc fpv multirotor racing quad' name='keywords'>
+<link href='/images/icons/favicon.png' rel='icon' type='image/png'>
+<link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+<!-- %link{rel:"stylesheet", "type" => "text/css", href:"https://fonts.googleapis.com/css?family=Montserrat:400,700"}/ -->
+<link href='https://fonts.googleapis.com/css?family=Exo+2:200,100,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='/css/fontawesome.css' rel='stylesheet'>
+<link href='/css/lightbox.css' rel='stylesheet'>
+<link href='/feed.xml' rel='alternate' title='Jakub Steiner (Atom)' type='application/rss+xml'>
+<!--[if lte IE 8]> <script src="js/html5shiv.js"></script> <![endif]-->
+<script src='/js/jquery.min.js'></script>
+<script src='/js/lightbox.js'></script>
+<script src='/js/skel.min.js'></script>
+<script src='/js/skel-panels.min.js'></script>
+<script src='/js/init.js'></script>
+</head>
+<body>
+<noscript>
+<link href='/css/skel-noscript.css' rel='stylesheet'>
+<link href='/css/style.css' rel='stylesheet'>
+<link href='/css/style-wide.css' rel='stylesheet'>
+</noscript>
+<!--[if lte IE 9]> <link rel="stylesheet" href="css/ie9.css" /> <![endif]-->
+<!--[if lte IE 8]> <link rel="stylesheet" href="css/ie8.css" /> <![endif]-->
+<!-- Header -->
+<div class='skel-panels-fixed' id='header'>
+<div class='top'>
+<!-- Logo -->
+<a href='/' id='logo'>
+<div class='image avatar48'></div>
+<h1 id='title'>
+Race FPV
+</h1>
+<span class='byline'>
+Build. Crash. Repeat.
+</span>
+</a>
+
+<!-- Nav -->
+<nav id='nav'>
+<ul>
+<li>
+<a href='/#blog'><span>Journal</span></a>
+</li>
+<li>
+<a href='/video101'><span>Cameras</span></a>
+</li>
+<li>
+<a href='/hangar'><span>Hangar</span></a>
+</li>
+<li>
+<a href='/#photos'><span>Photos</span></a>
+</li>
+<li>
+<a href='/#about'><span>About Me</span></a>
+</li>
+</ul>
+</nav>
+<aside>
+<h5>By Year</h5>
+<ul>
+<li>
+<a href="../2018.html">2018</a>
+<span class='tagcount'>
+(5)
+</span>
+</li>
+<li>
+<a href="../2017.html">2017</a>
+<span class='tagcount'>
+(5)
+</span>
+</li>
+<li>
+<a href="../2016.html">2016</a>
+<span class='tagcount'>
+(2)
+</span>
+</li>
+<li>
+<a href="../2015.html">2015</a>
+<span class='tagcount'>
+(9)
+</span>
+</li>
+</ul>
+<h5>
+<a href="/tags">By Tags</a>
+</h5>
+</aside>
+</div>
+<div class='bottom'>
+<!-- Social Icons -->
+<ul class='icons'>
+<li>
+<a class='fa fa-youtube solo' href='http://www.youtube.com/channel/UCvteAidIfQtf2FkUzxr8QVg/feed'>
+<span>Youtube</span>
+</a>
+</li>
+<li>
+<a class='fa fa-vimeo-square solo' href='http://vimeo.com/jimmacfx'>
+<span>Vimeo</span>
+</a>
+</li>
+<li>
+<a class='fa fa-instagram solo' href='http://instagram.com/jimmacfx'>
+<span>Instagram</span>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div class='main' role='main'><div id='main'>
+<article>
+<div class='container'>
+<header>
+<h2>
+TBS Smart Audio Unify Nano Channel Settings
+</h2>
+<p class='date'>
+Apr  5 2018
+</p>
+</header>
+</div>
+<div class='container'>
+<p class="image full">
+      <img alt="Rotorama Samurai running TBS Nano Unify &amp; Crossfire" src="/blog/2018-04-05-tbs-smart-audio-unify-nano-channel-settings/index/samuraj.jpg" />
+      <small>Rotorama Samurai running TBS Nano Unify &amp; Crossfire</small>
+    </p>
+
+<p>I never felt the need to use the smart audio connection to the flight controller to set VTX channels, because changing the channel meant losing the control display and required you to fiddle with the receiver in sync. But as I got the new TBS Unify Nano VTX, the need to actually solder the tiny button onto the board meant that I would have to investigate. Luckily TBS have enabled smart audio support in their receivers as well, so you can actually set the VTX channels in the transmitter or OpenTX radio using the LUA script.</p>
+
+<p>The process is simple, but it’s worth mentioning all the steps required, because I haven’t been able to see this documented anywhere:</p>
+
+<ul>
+  <li>
+    <p>Apart from connecting channels 1 and 2 to the FC’s UART RX and TX pins, run CH4 to the fullsize Unify audio pin. When using the Unify Nano, the pin is labeled smart audio and is on the top edge of the side pins, looking at the UFL antenna side.</p>
+  </li>
+  <li>
+    <p>Once connected, in the receiver configuration (LUA script or the fullsize TX back panel), select ‘Smart Audio’ for CH4. From then on, the receiver menu should include options for setting the band, channel and power output. Do note that the power settings are fixed to the Unify HV, so setting the power to 200mW will actually be 50mW on the Nano VTX. I’m not sure why, but you can’t connect the devices on CH3, the configuration would only allow ‘Smart Audio’ on CH4.</p>
+  </li>
+</ul>
+
+<p>A tip for soldering wires onto the Unify Nano — you want to place the wires perpendicularly to the board to make them lie nicely on the pad surface and bend the wires after soldering. Enjoy the best VTX configuration out there!</p>
+
+
+<ul id='tagstrip'>
+<li class='tag'>
+<a href="../tags/howto.html">howto</a>
+</li>
+<li class='tag'>
+<a href="../tags/tbs.html">tbs</a>
+</li>
+<li class='tag'>
+<a href="../tags/nano.html">nano</a>
+</li>
+<li class='tag'>
+<a href="../tags/unify.html">unify</a>
+</li>
+<li class='tag'>
+<a href="../tags/manual.html">manual</a>
+</li>
+</ul>
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = "racefpv"; // required: replace example with your forum shortname
+  
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+</div>
+</article>
+</div>
+</div>
+<!-- Footer -->
+<div id='footer'>
+<!-- Copyright -->
+<div class='copyright'>
+<p>Technology enabled out of body experience.</p>
+</div>
+</div>
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-68811788-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

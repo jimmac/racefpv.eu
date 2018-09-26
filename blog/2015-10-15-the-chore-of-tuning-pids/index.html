@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Race FPV — The chore of tuning PIDs
+</title>
+<meta content='text/html; charset=UTF8' http-equiv='content-type'>
+<meta content='fpv racing for beginners' name='description'>
+<meta content='jimmac red20rc fpv multirotor racing quad' name='keywords'>
+<link href='/images/icons/favicon.png' rel='icon' type='image/png'>
+<link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+<!-- %link{rel:"stylesheet", "type" => "text/css", href:"https://fonts.googleapis.com/css?family=Montserrat:400,700"}/ -->
+<link href='https://fonts.googleapis.com/css?family=Exo+2:200,100,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='/css/fontawesome.css' rel='stylesheet'>
+<link href='/css/lightbox.css' rel='stylesheet'>
+<link href='/feed.xml' rel='alternate' title='Jakub Steiner (Atom)' type='application/rss+xml'>
+<!--[if lte IE 8]> <script src="js/html5shiv.js"></script> <![endif]-->
+<script src='/js/jquery.min.js'></script>
+<script src='/js/lightbox.js'></script>
+<script src='/js/skel.min.js'></script>
+<script src='/js/skel-panels.min.js'></script>
+<script src='/js/init.js'></script>
+</head>
+<body>
+<noscript>
+<link href='/css/skel-noscript.css' rel='stylesheet'>
+<link href='/css/style.css' rel='stylesheet'>
+<link href='/css/style-wide.css' rel='stylesheet'>
+</noscript>
+<!--[if lte IE 9]> <link rel="stylesheet" href="css/ie9.css" /> <![endif]-->
+<!--[if lte IE 8]> <link rel="stylesheet" href="css/ie8.css" /> <![endif]-->
+<!-- Header -->
+<div class='skel-panels-fixed' id='header'>
+<div class='top'>
+<!-- Logo -->
+<a href='/' id='logo'>
+<div class='image avatar48'></div>
+<h1 id='title'>
+Race FPV
+</h1>
+<span class='byline'>
+Build. Crash. Repeat.
+</span>
+</a>
+
+<!-- Nav -->
+<nav id='nav'>
+<ul>
+<li>
+<a href='/#blog'><span>Journal</span></a>
+</li>
+<li>
+<a href='/video101'><span>Cameras</span></a>
+</li>
+<li>
+<a href='/hangar'><span>Hangar</span></a>
+</li>
+<li>
+<a href='/#photos'><span>Photos</span></a>
+</li>
+<li>
+<a href='/#about'><span>About Me</span></a>
+</li>
+</ul>
+</nav>
+<aside>
+<h5>By Year</h5>
+<ul>
+<li>
+<a href="../2018.html">2018</a>
+<span class='tagcount'>
+(5)
+</span>
+</li>
+<li>
+<a href="../2017.html">2017</a>
+<span class='tagcount'>
+(5)
+</span>
+</li>
+<li>
+<a href="../2016.html">2016</a>
+<span class='tagcount'>
+(2)
+</span>
+</li>
+<li>
+<a href="../2015.html">2015</a>
+<span class='tagcount'>
+(9)
+</span>
+</li>
+</ul>
+<h5>
+<a href="/tags">By Tags</a>
+</h5>
+</aside>
+</div>
+<div class='bottom'>
+<!-- Social Icons -->
+<ul class='icons'>
+<li>
+<a class='fa fa-youtube solo' href='http://www.youtube.com/channel/UCvteAidIfQtf2FkUzxr8QVg/feed'>
+<span>Youtube</span>
+</a>
+</li>
+<li>
+<a class='fa fa-vimeo-square solo' href='http://vimeo.com/jimmacfx'>
+<span>Vimeo</span>
+</a>
+</li>
+<li>
+<a class='fa fa-instagram solo' href='http://instagram.com/jimmacfx'>
+<span>Instagram</span>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div class='main' role='main'><div id='main'>
+<article>
+<div class='container'>
+<header>
+<h2>
+The chore of tuning PIDs
+</h2>
+<p class='date'>
+Oct 15 2015
+</p>
+</header>
+</div>
+<div class='container'>
+<p>This article originall appeared on <a href="http://jimmac.musichall.cz">my personal blog</a>, but since it’s so relevant to what this site is about, I’m reposting it here.</p>
+
+<p>Tuning PIDs is one of those things you really don’t want to do, but can’t avoid it in the acrobatic quad space. Flying camera operators don’t usually have to deal with this, but the power/weight ratio is so varied in the world of acro flying you’ll have hard time avoiding it there. Having a multirotor “locked in” for doing fast spins is a must. Milliseconds count.</p>
+
+<p>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/XX9hzDJB3Pg" frameborder="0" allowfullscreen="">
+<a href="https://www.youtube.com/watch?v=XX9hzDJB3Pg">FPV Weekend</a></iframe>
+</p>
+
+<p>So what is PID tuning? The flight controller’s job is to maintain a certain position of the craft. It has sensors to tell it how the craft is angled and how it’s accellerating, and there’s external forces acting on the quad. Gravity, wind. Then there’s a human giving it RC orders to change its state. All this happens in a PID loop. The FC either wants to maintain its position or is given an updated position. That’s the <em>target</em>. All the sensors give it the actual <em>current state</em>. Magic happens here, as the controller gives orders to individual ESCs to spin the motors so we get to there. Then we look at what the sensors say again. Rinse and repeat.</p>
+
+<p>PID loop is actually a common process you can find in all sorts of computer controllers. Even something as simple as a thermostat does this. You have a temperature sensor and you drive a heater or an air conditioner to reach and maintain a target state.</p>
+
+<p>The trick to a solid control is to apply just the right amount of action to get to our target state. If there is difference between where we <em>are</em> and where we <em>want to be</em>, we need to apply some force. If this difference is smaller, only a small force is required. If it’s big, a powerful force is needed. This is essentially what the P means, <em>proprotional</em>. In most cases, as a controller, you are truly unhappy if you are elsewhere to where you were told to be. You want to correct this difference fast, so you provide a high proportional value/force. However, in the case of a miniquad, the momentum will continue pulling you when you reached your target point and don’t apply any force anymore. At this point the difference occurs again and the controller will start correcting the craft pulling it back in the opposite direction. This results in an unstable state as the controller will be bouncing the quad back and forth, never reaching the target state of “not having to do anything”. The P is too big. So what you need is a value that’s high enough to correct the difference fast, but not as much so the momentum gets you oscillating around the target.</p>
+
+<p>So if we found our P value, why do we need to bother with anything else? Well sadly pushing air around with props is a complicated way to remain stationary. The difference between where you are and where you want to be isn’t just determined by the aircraft itself. There are external forces that are in play and those change. We can get a gust of wind. So what we do is we correct that P value based on the changed conditions. Suddenly we don’t have a fixed P contoller, we have one that has variable P. Let’s move on how P is dynamically corrected.</p>
+
+<p>The <em>integral</em> part of the controller corrects the difference that suddenly appears due to the new external forces coming into play. I would probably do a better job explaining this if I enjoyed maths, but don’t hate me, I’m a graphics designer. Magic maths corrects this offset. Having just the proprotional and integral part of the corrective measure is enough to form a capable controller perfectly able to provide a stable system.</p>
+
+<p>However for something as dynamic as an acrobatic flight controller, you want to improve on the final stage of the correction where you are close to reaching your target after a fast dramatic correction. Typically what a PI controller would get you is a bit of a wobble at the end. To correct it, we have the <em>derivative</em> part of the correction. It’s a sort of a predictive measure to lower the P as you’re getting close to the target state. D gives you the nice smooth “locked in” feeling, despite having high P and I values, giving you really fast corrective ability.</p>
+
+<p>There are three major control motions of a quad that the FC needs to worry about. Pitch for forward motion is controlled by spinning the back motors faster than the front two motors thus angling the quad forward. Roll motion is achieved exactly the same way, but with the two motors on one side spinning faster than the other two. The last motion is spinning in the Z axis, the yaw. That is achieved by torgue and the fact than the propellers and motors spin in different directions. Typically the front left and back right motor are clockwise spinning and the front right and back left motor are spinning counter clockwise. Thus spinning up/accellerating the front left and back right motors will turn the whole craft counter clockwise (counter motion).</p>
+
+<p>I prepared a little cheat sheet on how to go about tuning PIDs on the NAZE32 board. Before you start though, make sure you set the PID looptime as low as your ESC allow. Usually ESC send the pulses <em>400 times a second</em> which is equivalent to a looptime of 2500. The more expensive ESC can do 600Hz and some, such as the miniscule KISS ESCs, can go as low as 1200.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">ESC refresh rate</th>
+      <th style="text-align: left">NAZE32 Looptime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">286Hz</td>
+      <td style="text-align: left">3500</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">333Hz</td>
+      <td style="text-align: left">3000</td>
+    </tr>
+    <tr>
+      <td style="text-align: right"><code>400Hz</code></td>
+      <td style="text-align: left"><code>2500</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: right">500Hz</td>
+      <td style="text-align: left">2000</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">600Hz</td>
+      <td style="text-align: left">1600</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>You do this in the CLI tab of baseflight:</p>
+
+<pre><code>set looptime=2500
+save
+</code></pre>
+
+<p>Hope this has been helpful for some as it was for me :).</p>
+
+<p class="image full">
+<a href="/blog/2015-10-15-the-chore-of-tuning-pids/index/pids.pdf"><img type="image/svg+xml" alt="" src="/blog/2015-10-15-the-chore-of-tuning-pids/index/pids.svg" /></a>
+<small>Quick Guide on PID tuning</small>
+</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=UR0hOmjaHp0">PID controller explained</a></li>
+  <li><a href="https://www.youtube.com/watch?v=30Au6sEv6-o">practical PID tuning with Cleanflight</a></li>
+</ul>
+
+<ul id='tagstrip'>
+<li class='tag'>
+<a href="../tags/naze32.html">naze32</a>
+</li>
+<li class='tag'>
+<a href="../tags/baseflight.html">baseflight</a>
+</li>
+<li class='tag'>
+<a href="../tags/cleanflight.html">cleanflight</a>
+</li>
+</ul>
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = "racefpv"; // required: replace example with your forum shortname
+  
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+</div>
+</article>
+</div>
+</div>
+<!-- Footer -->
+<div id='footer'>
+<!-- Copyright -->
+<div class='copyright'>
+<p>Technology enabled out of body experience.</p>
+</div>
+</div>
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-68811788-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
